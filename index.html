@@ -6,17 +6,19 @@
 <div id="demo"></div>
 
 <script>
-// Initialize text variable
-let text = "";
 
+let text = "";
+ var a = document.getElementById("demo");
 // Function to run the loop
 function runLoop() {
+   
     let i = 0;
     do {
+        a.append(i);
         console.log(i);
     } while (i < 10);  
 
-    document.getElementById("demo").innerHTML = text;
+   
 }
 
 // Event listener for button click
